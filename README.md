@@ -1,2 +1,2 @@
-# Virtual Brilliance
+# myCode
 new project

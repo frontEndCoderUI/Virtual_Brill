@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Virtual Brilliance</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,7 @@
 
 <body>
 
-    <div class="wrapper">
+    <!-- <div class="wrapper">
         <nav class="nabar">
             <div class="left-section">
                 <div class="logo">
@@ -46,22 +47,55 @@
                 </div>
             </div>
         </nav>
+    </div> -->
+
+    <div class="wrapper">
+        <nav class="row nabar px-4">
+
+            <div class="col-lg-6 left-section">
+                <div class="logo">
+                    <img src="./Assets/vectors/logo.svg"></img>
+                </div>
+                <div class="search-rect">
+                    <div class="search-rect1">
+                        <img id="search-icon" src="./Assets/vectors/search.svg"></img>
+                        <div class="search-div">Search...</div>
+                    </div>
+                    <div class="mic-container">
+                        <img src="./Assets/vectors/mic.svg"></img>
+                        <img src="./Assets/vectors/micb.svg"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 right-section">
+                <div class="phone-container">
+                    <img src="./Assets/vectors/phone icon.svg"></img>
+                </div>
+                <div class="profile-container">
+                    <span class="profile-name">Lakshmikanth Reddy</span>
+                    <img src="./Assets/images/Ellipse 5.png"></img>
+                </div>
+                <div class="menu-container">
+                    <span class="menu-text">Menu</span>
+                    <img class="menu-img" src="./Assets/vectors/menuVector.svg"></img>
+                </div>
+            </div>
+        </nav>
     </div>
 
     <div class="wrapper">
-        <div class="hero-container">
-
-            <div class="hero-left">
+        <div class="row hero-container px-4">
+            <div class="col-lg-6 hero-left">
                 <div class="hero-text">
-                    <span>Virtual</span> Brilliance,<br>
+                    <span>Virtual</span> Brilliance,
                     Business <span>Success</span>
                 </div>
                 <div>
                     <div>
                         <div>
-                            <p class="hero-desc">
-                                Unlock success with Geodefiners. Our <br>
-                                virtual brilliance drives efficiency and <br>
+                            <p class="hero-desc col-lg-6">
+                                Unlock success with Geodefiners. Our
+                                virtual brilliance drives efficiency and
                                 innovation, leaving a lasting impact
                             </p>
                             <div class="hero-btn-section">
@@ -76,9 +110,9 @@
                     <div class="portfolio-head">
                         <div class="portfolio-head-text">
                             <p>Explore Our Work</p>
-                            <span class="portfolio-arrow-img">
+                            <p class="portfolio-arrow-img">
                                 <img width="12px" src="./Assets/vectors/portfolio-arrow.svg" />
-                            </span>
+                            </p>
                         </div>
                     </div>
                     <div class="portfolio-img">
@@ -89,8 +123,7 @@
                     </div>
                 </div>
 
-
-                <div class="portfolio-hot-container">
+                <div class="col-lg-10 portfolio-hot-container">
                     <div class="hot-update">
                         <img src="./Assets/vectors/Hot-updt.svg" />
                         <div class="hot-update-text">
@@ -100,7 +133,7 @@
                         </div>
                     </div>
                     <div class="updates-nav">
-                        <p>1/4</p>
+                        <span>1/4</span>
                         <span class="updates-nav-center"><img src="./Assets/vectors/page-arrow-left.svg" /></span>
                         <span><img src="./Assets/vectors/page-arrow-right.svg" /></span>
                     </div>
@@ -108,16 +141,87 @@
 
             </div>
 
-            <div class="hero-right">
+            <div class="col-lg-6 hero-right">
                 <div class="hero-img">
                     <img src="./Assets//vectors/hero image.svg" />
                 </div>
             </div>
+
+            <div class="float-box">
+                <ul>
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                </ul>
+
+                <ul>
+                    <li>Virtual Assistance</li>
+                    <li>IT Solutions</li>
+                    <li>Admin Services</li>
+                </ul>
+
+            </div>
         </div>
     </div>
 
+    <div class="wrapper">
+        <div class="define-section">
 
-    <script src="main.js"></script>
+            <div class="row px-4">
+                <div class="col-lg-6">
+                    <div class="defining-head">
+                        <h3>Defining Excellence Through</h3>
+                        <p>Crafting solutions that redefine success and elevate your <br>
+                            business journey</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 ">
+                    <div class="service-icons-section">
+                        <div class="section d-flex-column justify-content-center">
+                            <div class="icon-rect1" id="virtual-icon">
+                                <!-- <span "></span> -->
+                            </div>
+                            <p class="icon-text">Virtual<br>Assistance</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-rect2" id="it-icon"></div>
+                            <p class="icon-text">IT <br>Solutions</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-rect3" id="admin-icon"></div>
+                            <p class="icon-text">Admin <br>Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row px-4">
+                <div class="col-lg-6">
+                    <div class="it-soln-section col-lg-11">
+                        <h3 class="it-soln-head">IT Solutions</h3>
+                        <p class="it-soln-para">Empower your digital presence with our comprehensive IT
+                            Solutions. From Mobile App and Web Development to
+                            Cloud Computing and Custom Software, we transform
+                            your ideas into cutting-edge technological solutions.</p>
+                    </div>
+
+                    <div class="vr-base col-lg-11">
+                        <div class="vr-box">
+                            <div class="vr-img-container">
+                                <p class="yoeText">years of experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="src/js/bootstrap.bundle.min.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 
 </html>
