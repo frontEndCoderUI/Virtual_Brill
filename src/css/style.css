@@ -116,7 +116,7 @@ body {
   font-size: 58px;
 }
 .hero-text span:nth-child(1),
-span:nth-child(3) {
+span:nth-child(2) {
   color: var(--orange-color);
 }
 .hero-desc {
@@ -191,8 +191,8 @@ span:nth-child(3) {
   max-width: max-content !important;
   background-color: var(--white90);
   position: absolute;
-  top: 32%;
-  left: 45%;
+  top: 30%;
+  left: 35%;
   /* transform: translate(-50%, -50%); */
   display: flex;
   align-items: center;
@@ -306,4 +306,50 @@ span:nth-child(3) {
   position: absolute;
   top: -27%;
   left: 16%;
+}
+
+.chat-section{
+  position: relative;
+  margin-left: 10px;
+}
+.chat-box::before{
+  content: url("/Assets/vectors/p1v2/chat_icon.png");
+  position: absolute;
+  top: -10%;
+  width:20%;
+}
+.chat-box::after{
+  content: url("/Assets/vectors/p1v2/Rectangle 9.png");
+  position: absolute;
+  bottom: -3%;
+  right: 0%;
+}
+.chat-box::after{
+  content: "Let's Start a project";
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  max-width: 40%;
+  color: var(--white);
+}
+.mobile-app-dev{
+  padding: 30px 30px;
+  color: var(--white);
+  background-color: var(--orange-color);
+  border-radius: 20px; 
+  .mobile-app-head{
+    font-size: 24px;
+    font-weight: 600 !important;
+  }
+  .mobile-app-para{
+    font-size: 18px;
+    font-weight: 400 !important;
+  }
+}
+
+.btn.btn-dark{
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500 !important;
+  background-color: #444444;
 }
