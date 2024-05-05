@@ -822,7 +822,7 @@ margin-bottom: 8px;
     content: url("/Assets/vectors/p1v2/10+.svg");
     position: absolute;
     top: 20%;
-    left: -12%;
+    left: -20%;
   }
 
   .vr-box::after {
@@ -894,7 +894,7 @@ margin-bottom: 8px;
     content: url("/Assets/vectors/p1v2/10+.svg");
     position: absolute;
     top: 20%;
-    left: 15%;
+    left: 12%;
   }
 
   .vr-box::after {
