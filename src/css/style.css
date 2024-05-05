@@ -807,7 +807,9 @@ margin-bottom: 8px;
   .define-section {
     margin: 10px auto;
   }
-
+  #vertical_rect_img{
+    display: none;
+  }
   .vr-box::before,
   .vr-box::after,
   .chat-box::before,
@@ -879,7 +881,9 @@ margin-bottom: 8px;
   .define-section {
     margin: 20px auto;
   }
-
+#vertical_rect_img{
+  display: none;
+}
   .vr-box::before,
   .vr-box::after,
   .chat-box::before,
