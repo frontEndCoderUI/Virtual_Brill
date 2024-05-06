@@ -708,7 +708,7 @@ span:nth-child(2) {
 .get-in-touch-section::after {
   content: '';
   position: absolute;
-  top: 2%;
+  top: 5%;
   right: 0;
   width: 50%;
   height: 100%;
