@@ -1,0 +1,126 @@
+:root {
+    --orange-color: #ef6c0d;
+    --light-orange-color: #feb702;
+    --yellow-color: #e2cc06;
+    --dark-color: #444444;
+    --white: #ffff;
+    --white95: #f2f2f2;
+    --white90: #e6e6e6;
+    --white85: #d9d9d9;
+    --white40: #666666;
+    --heavyDark-color: #1B1B1B;
+    --dark-green-color: #92C80C;
+    --light-blue-color: #024885;
+}
+
+.hero-img img,
+.approach-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.abt-us-head {
+    color: var(--orange-color);
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 90px;
+    text-align: left;
+}
+
+.abt-us-title {
+    color: var(--dark-color);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+}
+
+.hero-text-p p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+/* Section 2 starts */
+.main-text {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 90px;
+    text-align: left;
+}
+
+.main-text2 {
+    color: var(--orange-color);
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 90px;
+    text-align: left;
+}
+
+/* mission-section  */
+.mission-section {
+    background-color: var(--yellow-color);
+    border-radius: 25px;
+    color: var(--white);
+    position: relative;
+}
+
+.mission-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('/Assets/vectors/aboutus/view2bg.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.mission-text {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    color: var(--dark-color);
+}
+
+.mission-desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: var(--dark-color);
+}
+
+/* Approach impact section  */
+.approach-section,
+.impact-section {
+    background-color: var(--white85);
+    border-radius: 25px;
+}
+
+.approach-desc {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: var(--dark-color);
+}
+
+#approach-text-head {
+    color: var(--orange-color);
+}
+
+#contact-us-btn {
+    border-radius: 20px;
+    background-color: var(--orange-color);
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
