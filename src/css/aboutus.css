@@ -62,7 +62,7 @@
 .mission-section {
     background-color: var(--yellow-color);
     border-radius: 25px;
-    color: var(--white);
+    color: var(--white) !important;
     position: relative;
 }
 
@@ -83,7 +83,6 @@
     font-weight: 600;
     line-height: 60px;
     text-align: left;
-    color: var(--dark-color);
 }
 
 .mission-desc {
@@ -91,7 +90,6 @@
     font-weight: 500;
     line-height: 27px;
     text-align: left;
-    color: var(--dark-color);
 }
 
 /* Approach impact section  */
