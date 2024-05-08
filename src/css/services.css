@@ -126,3 +126,38 @@ color: var(--dark-color);
     line-height: 30px;
     text-align: left;
 }
+.details-card{
+    color: var(--dark-color);
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 20px 35px !important;
+}
+.details-card-title{
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+}
+.details-p{
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+text-align: left;
+margin-bottom: 0px !important;
+}
+.img-count-section .hero{
+background-color: var(--white);
+border-radius: 25px;
+padding: 30px 14px;
+text-align: center;
+}
+#count-div{
+color: var(--orange-color);
+font-size: 40px;
+font-weight: 600;
+line-height: 60px;
+text-align: center;
+padding: 35px 10px;
+background-color: var(--white);
+border-radius: 25px;
+}
