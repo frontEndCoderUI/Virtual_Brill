@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/navbar.css" />
+    <link rel="stylesheet" href="./src/css/contactus.css" />
+
+</head>
+
+<body>
+
+    <!-- NavBar Section Starts. -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="./Assets/vectors/logo.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <div class="search-rect">
+                    <div class="search-rect1">
+                        <img id="search-icon" src="./Assets/vectors/search.svg"></img>
+                        <div class="search-div">Search...</div>
+                    </div>
+                    <div class="mic-container">
+                        <img src="./Assets/vectors/mic.svg"></img>
+                        <img src="./Assets/vectors/micb.svg"></img>
+                    </div>
+                </div>
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <img src="./Assets/vectors/phone icon.svg" alt="Phone">
+                        </a>
+                    </li>
+                    <li class="nav-item" id="profile-container">
+                        <a class="nav-link" href="services.html" id="profile-name_link">
+                            <span class="profile-name">Lakshmikanth Reddy</span>
+                            <img src="./Assets/images/Ellipse 5.png" alt="Profile">
+                        </a>
+                    </li>
+                    <li class="nav-item menu-container">
+                        <a class="nav-link" href="about.html">
+                            <button class="btn btn-dark rounded-pill px-3 py-2">Menu <img class="menu-img"
+                                    src="./Assets/vectors/menuVector.svg" alt="Menu"></button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Section Ends. -->
+
+    <!-- Hero Section. -->
+    <div class="container my-5 pt-5">
+        <div class="row">
+
+            <div class="col-lg-6 pr-5">
+                <!-- Hero Section Content -->
+                <div class="hero-text mb-4 mt-2">
+                    <span class="abt-us-head">Contact Us</span>
+                </div>
+                <div class="hero-text-title mb-4">
+                    <span class="abt-us-title">
+                        Get in Touch with Geodefiners
+                    </span>
+                </div>
+
+                <div class="hero-text-desc">
+                    <div class="hero-text-p">
+                        <p class="mb-3">
+                            Welcome to Geodefiners! We're excited to hear from you. Whether you have questions about our
+                            services, <span class="text-bold">want to discuss a project,</span> or simply want to say
+                            hello, <span class="text-bold">we're here to help.</span>
+                            Contact us using the information below or fill out the form, and we'll get back to you as
+                            soon as possible
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <!-- Hero Image -->
+                <div class="hero-img">
+                    <img src="./Assets/vectors/contactus/hero.svg" alt="hero image" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- get-in-touch  Section-->
+    <div class="container get-in-touch-section">
+        <div class="row">
+
+            <div class="col-lg-6 get-in-touch-form mr-1">
+                <div class="head-cont d-flex align-items-center justify-content-between mb-2 mt-1">
+                    <div>
+                        <h3 class="gnt-h">Hit Us Up!</h3>
+
+                    </div>
+                    <div>
+                        <button type="button" id="submi-btnn" class="btn btn">Submit</button>
+                    </div>
+                </div>
+
+                <form id="form-container">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Mail Address">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control center-placeholder " id="exampleFormControlTextarea1"
+                                placeholder="Message" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="col-lg-5 get-in-touch-contact">
+                <h5 class="get-in-touch-head">
+                    Contact Information
+                </h5>
+
+                <div class="contact-info">
+                    <h6 class="contact-head">Founder</h6>
+                    <p class="contact-p">P. Lakshmikanth Reddy
+                </div>
+                <div class="contact-info">
+                    <h6 class="contact-head">Email</h6>
+                    <p class="contact-p">lachi@geodefiners.com</p>
+                </div>
+
+                <div class="contact-info">
+                    <h6 class="contact-head">Phone</h6>
+                    <p class="contact-p">(+91) 994 9999 430</p>
+                </div>
+
+                <div class="contact-info">
+                    <h6 class="contact-head">Address</h6>
+                    <p class="contact-p">
+                        501 Sri Nidhi Pride, Near Hitex Exhibition Centre, Hyderabad, Telangana, India - 500084</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 get-in-touch-contact">
+                <div class="hero-img">
+                    <img src="./Assets/vectors/contactus/map.svg" alt="hero image" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
