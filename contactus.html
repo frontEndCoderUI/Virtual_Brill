@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>About Us</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css" />
@@ -73,7 +73,7 @@
     <div class="container my-5 pt-5">
         <div class="row">
 
-            <div class="col-lg-6 pr-5">
+            <div class="col-lg-6 col-md-6 col-sm-6 pr-5">
                 <!-- Hero Section Content -->
                 <div class="hero-text mb-4 mt-2">
                     <span class="abt-us-head">Contact Us</span>
@@ -97,7 +97,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 col-sm-6">
                 <!-- Hero Image -->
                 <div class="hero-img">
                     <img src="./Assets/vectors/contactus/hero.svg" alt="hero image" />
@@ -111,7 +111,7 @@
     <div class="container get-in-touch-section">
         <div class="row">
 
-            <div class="col-lg-6 get-in-touch-form mr-1">
+            <div class="col-lg-6 col-md-6 col-sm-6 get-in-touch-form mr-1">
                 <div class="head-cont d-flex align-items-center justify-content-between mb-2 mt-1">
                     <div>
                         <h3 class="gnt-h">Hit Us Up!</h3>
@@ -145,7 +145,7 @@
                 </form>
             </div>
 
-            <div class="col-lg-5 get-in-touch-contact">
+            <div class="col-lg-5 col-md-5 col-sm-5 get-in-touch-contact">
                 <h5 class="get-in-touch-head">
                     Contact Information
                 </h5>
@@ -173,16 +173,120 @@
         </div>
 
         <div class="row">
-            <div class="col-lg-12 get-in-touch-contact">
+            <div class="col-lg-12 col-md-12 col-sm-12 get-in-touch-contact">
                 <div class="hero-img">
                     <img src="./Assets/vectors/contactus/map.svg" alt="hero image" />
                 </div>
-
             </div>
         </div>
     </div>
 
+    <!-- schedule-appointment Section-->
 
+    <div class="container schedule-appointment-section mt-5 mb-4">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-7">
+                <h3 class="geodefine-edge-head">Schedule an Appointment with Geodefiners</h3>
+                <p class="geodefine-edge-text">
+                    Ready to discuss your business needs with us? Use the calendar below to schedule an appointment at
+                    your convenience. Simply select a date and time that works for you, fill out the required
+                    information, and we'll send you a confirmation email with all the details.
+                </p>
+            </div>
+        </div>
+
+        <div class="row my-3 mx-1">
+            <div class="col-lg-4 col-md-4 col-sm-4 date-picker-section p-3">
+
+                <form id="date-form">
+                    <div class="form-row">
+                        <div class="col-8">
+                            <input type="number" value="May" class="form-control" placeholder="May">
+                        </div>
+                        <div class="col-4">
+                            <input type="number" value="2024" class="form-control" placeholder="">
+                        </div>
+                    </div>
+                </form>
+
+                <div class="hero-img mt-2">
+                    <img src="./Assets/vectors/contactus/calender.svg" alt="">
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-8 working-hr-section d-flex justify-content-between flex-column">
+
+                <div class="col-lg-3 col-md-3 col-sm-3 working-hr-card p-3 mb-3">
+                    <div class="working-hr-card-head pb-1">
+                        <h6> Working Hours </h6>
+                    </div>
+                    <div class="working-hr-time">
+                        <div class="days">
+                            <p class="mb-1">Mon-Sat</p>
+                            <p class="mb-0">Sunday</p>
+                        </div>
+                        <div class="days">
+                            <p class="mb-1">9AM-9PM</p>
+                            <p class="mb-0">Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="working-spacer my-2"></div>
+                <div class="steps-div">
+                    <ol>
+                        <li>Select a date and time from the available slots on the calendar.</li>
+                        <li>Fill out the form with your name, email address, and any additional information or
+                            questions you'd like to discuss.</li>
+                        <li>Click "Confirm" to schedule your meeting.</li>
+                        <li>You'll receive a confirmation email shortly with all the details of your appointment.
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row align-items-start share-req-section mt-5 mx-1">
+
+            <div class="col-lg-8 col-md-8 col-sm-8 share-ur-req py-3 px-4">
+
+                <h3>Share Your Requirements</h3>
+                <form id="share-form-container">
+                    <div class="form-row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Full Name">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                            <input type="text" class="form-control" placeholder="Mail Address">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <textarea class="form-control center-placeholder" id="exampleFormControlTextarea2"
+                                    placeholder="you'd like to discuss about?" rows="3"></textarea>
+                            </div>
+                            <!-- <button class="btn btn-light align-right">Confirm</button> -->
+                            <div class="d-grid d-md-flex justify-content-md-end">
+                                <button class="btn btn-light" type="button">Confirm</button>
+                            </div>
+                        </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 note-section">
+            <h3>Note</h3>
+            <p class="note-text">
+                
+                Please note that appointments are subject to availability. If you have any questions or need
+                assistance, feel free to reach out to us directly using the contact information provided above
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <script src="./src/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

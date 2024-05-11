@@ -14,11 +14,13 @@
 }
 
 .hero-img img,
-.approach-img img {
+.approach-img img{
     max-width: 100%;
     height: auto;
 }
-
+.approach-img{
+    text-align: center;
+}
 .abt-us-head {
     color: var(--orange-color);
     font-size: 60px;
@@ -121,4 +123,58 @@
     line-height: 22.4px;
     letter-spacing: -0.02em;
     text-align: left;
+}
+
+/* For Mobile */
+@media only screen and (max-width: 767px) {
+
+    .container {
+        margin-bottom: 20px !important;
+    }
+
+    .hero-text {
+        margin-bottom: 0px !important;
+    }
+
+    .hero-text-title {
+        margin-bottom: 4px !important;
+    }
+
+    .mission-section::after {
+        content: "";
+        background-image: url('');
+    }
+    .impact-section{
+        margin-top: 30px;
+    }
+    .approach-img{
+        margin-top: 20px;
+    }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .container {
+        margin-bottom: 20px !important;
+    }
+
+    .hero-text {
+        margin-bottom: 0px !important;
+    }
+
+    .hero-text-title {
+        margin-bottom: 4px !important;
+    }
+
+    .mission-section::after {
+        content: "";
+        background-image: url('');
+    }
+    .impact-section{
+        margin-top: 30px;
+    }
+    .approach-img{
+        margin-top: 20px;
+    }
 }

@@ -1,150 +1,345 @@
 :root {
-    --orange-color: #ef6c0d;
-    --light-orange-color: #feb702;
-    --yellow-color: #e2cc06;
-    --dark-color: #444444;
-    --white: #ffff;
-    --white95: #f2f2f2;
-    --white90: #e6e6e6;
-    --white85: #d9d9d9;
-    --white40: #666666;
-    --heavyDark-color: #1B1B1B;
-    --dark-green-color: #92C80C;
-    --light-blue-color: #024885;
+  --orange-color: #ef6c0d;
+  --light-orange-color: #feb702;
+  --yellow-color: #e2cc06;
+  --dark-color: #444444;
+  --white: #ffff;
+  --white95: #f2f2f2;
+  --white90: #e6e6e6;
+  --white85: #d9d9d9;
+  --white40: #666666;
+  --heavyDark-color: #1B1B1B;
+  --dark-green-color: #92C80C;
+  --light-blue-color: #024885;
 }
 
 .hero-img img,
 .approach-img img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .abt-us-head {
-    color: var(--orange-color);
-    font-size: 60px;
-    font-weight: 600;
-    line-height: 90px;
-    text-align: left;
+  color: var(--orange-color);
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 90px;
+  text-align: left;
 }
 
 .abt-us-title {
-    color: var(--dark-color);
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 45px;
-    text-align: left;
+  color: var(--dark-color);
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
 }
 
 .hero-text-p p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
 }
-.text-bold{
-    font-weight: bold;
+
+.text-bold {
+  font-weight: bold;
 }
 
 /* get-in-touch-section-edge Section starts */
 .get-in-touch-section {
-    background-color: var(--orange-color);
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 25px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .get-in-touch-form{
-    background-color: var(--white);
-    border-radius: 25px;
-    padding: 20px;
-  }
-  .head-cont{
+  background-color: var(--orange-color);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.get-in-touch-form {
+  background-color: var(--white);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.head-cont {
   font-size: 28px;
   font-weight: 600;
   line-height: 44.8px;
   text-align: left;
-  }
-  #submi-btnn{
-    background-color: var(--yellow-color);
-    color: var(--white);
+}
+
+#submi-btnn {
+  background-color: var(--yellow-color);
+  color: var(--white);
   font-size: 18px;
   font-weight: 600;
   line-height: 28.8px;
   text-align: center;
   padding: 5px 20px;
   margin-bottom: 8px;
-  
+
+}
+
+#form-container input,
+#form-container textarea {
+  background-color: var(--white85);
+  border: none;
+  padding: 25px !important;
+  color: var(--dark-color);
+  opacity: 0.5;
+}
+
+.center-placeholder::placeholder {
+  vertical-align: middle;
+  padding-top: 35px;
+}
+
+/* Remove textarea resize handle */
+#exampleFormControlTextarea1::-webkit-resizer,
+#exampleFormControlTextarea1::-moz-resizer,
+#exampleFormControlTextarea1::resizer {
+  display: none !important;
+}
+
+.get-in-touch-contact {
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.get-in-touch-contact p {
+  margin-bottom: 0px !important;
+}
+
+.get-in-touch-head {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+  margin: 10px 0px 10px 0px;
+  margin-bottom: 20px;
+}
+
+.get-in-touch-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+}
+
+.get-in-touch-details {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* get-in-touch-section-edge Section ends */
+
+/* contact-section-edge Section ends */
+.contact-head {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.contact-p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  padding-bottom: 20px !important;
+}
+
+/* schedule-appointment Section */
+.schedule-appointment-section {
+  position: relative;
+}
+
+.schedule-appointment-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  max-width: 40%;
+  height: 40%;
+  background-image: url('/Assets/vectors/contactus/appoint.svg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.geodefine-edge-head {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+  color: var(--orange-color);
+}
+
+.geodefine-edge-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+
+.date-picker-section {
+  background-color: var(--yellow-color);
+  border-radius: 25px;
+}
+
+#date-form input,
+#date-form textarea {
+  background-color: var(--white);
+  border: none;
+  padding: 25px !important;
+  color: var(--dark-color);
+}
+
+.working-hr-card {
+  border-radius: 25px;
+  background-color: var(--white85);
+}
+
+.working-hr-card-head h6 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: var(--orange-color);
+}
+
+.working-hr-card-head {
+  border-bottom: 1px solid var(--white40);
+  border-bottom: 1px solid rgba(150, 149, 149, 0.6);
+}
+
+.working-hr-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px !important;
+  margin-top: 10px;
+}
+
+.steps-div li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  padding: 2px 0px;
+}
+
+.share-ur-req {
+  background-color: var(--yellow-color);
+  border-radius: 25px;
+}
+
+.share-ur-req h3 {
+  color: var(--white);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+#share-form-container input,
+#share-form-container textarea {
+  background-color: #00000033;
+  border: none;
+  padding: 25px;
+  color: #0000004D;
+  margin-bottom: 15px;
+}
+#exampleFormControlTextarea2{
+  padding: 22px !important;
+}
+#confirm-btn{
+font-size: 18px;
+font-weight: 600;
+line-height: 28.8px;
+text-align: left;
+}
+.note-section{
+font-size: 18px;
+font-weight: 700;
+line-height: 27px;
+text-align: left;
+padding: 0px 30px;
+}
+.note-text{
+font-weight: 400;
+}
+
+
+
+
+
+
+/* For Mobile */
+@media only screen and (max-width: 767px) {
+
+  .container,
+  .share-ur-req{
+    margin-bottom: 20px !important;
   }
-  #form-container input,
-  #form-container textarea{
-    background-color: var(--white85);
-    border: none;
-    padding: 25px !important;
-    color: var(--dark-color);
-    opacity: 0.5;
-  }
-  .center-placeholder::placeholder {
-    vertical-align: middle;
-    padding-top: 35px;
-    }
-  
-  /* Remove textarea resize handle */
-  #exampleFormControlTextarea1::-webkit-resizer,
-  #exampleFormControlTextarea1::-moz-resizer,
-  #exampleFormControlTextarea1::resizer {
-    display: none !important;
-  }
-  
-  .get-in-touch-contact {
-    margin-top: 10px;
-    color: var(--white);
-  }
-  
-  .get-in-touch-contact p {
+  .hero-text{
     margin-bottom: 0px !important;
   }
-  
-  .get-in-touch-head {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 45px;
-    text-align: left;
-    margin: 10px 0px 10px 0px;
-    margin-bottom: 20px;
+  .hero-text-title{
+   margin-bottom: 4px !important;
   }
-  
-  .get-in-touch-text {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28.8px;
-    text-align: left;
+  .schedule-appointment-section, .share-req-section
+{
+    margin-top: 10px !important;
   }
-  
-  .get-in-touch-details {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    text-align: left;
-    margin-top: 20px;
+  .schedule-appointment-section::after {
+    content: "";
+    background-image: url('');
   }
-  /* get-in-touch-section-edge Section ends */
-  
-  /* contact-section-edge Section ends */
-  .contact-head{
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 27px;
-    text-align: left;
-    margin-bottom: 0px;
+
+  .date-picker-section {
+    margin: 0px 1% 20px 1%;
   }
-  .contact-p{
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    padding-bottom: 20px !important;
+
+  .working-spacer {
+    display: none;
   }
+}
+
+/* For tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .container,
+  .share-ur-req{
+    margin-bottom: 20px !important;
+  }
+  .hero-text{
+    margin-bottom: 0px !important;
+  }
+  .hero-text-title{
+   margin-bottom: 4px !important;
+  }
+  .schedule-appointment-section, .share-req-section
+{
+    margin-top: 10px !important;
+  }
+  .schedule-appointment-section::after {
+    content: "";
+    background-image: url('');
+  }
+
+  .date-picker-section {
+    margin: 0px 1% 20px 1%;
+  }
+
+  .working-spacer {
+    display: none;
+  }
+}
