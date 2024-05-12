@@ -134,7 +134,8 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-    height: auto;
+    min-height: 100vh;
+    max-height: auto;
     background-color: var(--white90);
     z-index: 1000;
     border-bottom: 1px solid var(--white95);
@@ -165,6 +166,13 @@ body {
     padding: 0px 10%;
 }
 
+#menu-card-home{
+    padding: 0px 4%;
+}
+
+#menu-card-home .menu-card-text{
+max-width: 75%;
+}
 #projects-img {
     right: 0px;
     top: 20%;
@@ -184,9 +192,9 @@ body {
 }
 
 #home-img {
-    right: 0%;
-    top: 10%;
-    width: 40%;
+    right: -6%;
+    top: -5%;
+    width: 36%;
 }
 
 #contact-img {
@@ -306,8 +314,15 @@ body {
         align-items: center;
         justify-content: center;
     } 
+    #menu-card-home{
+        padding: 0px 10% !important;
+    }
+    
+    #menu-card-home .menu-card-text{
+    max-width: 70% !important;
+    }
     .menu-container button{
-        width: 75vw;
+        width: 310px;
         padding: 5px auto;
     }
     
@@ -337,14 +352,14 @@ body {
     }
 
     #home-img {
-        right: -8%;
-        top: -7%;
+        right: -5%;
+        top: 25%;
         width: 50%;
     }
 
     #contact-img {
         right: -35%;
-        top: 15%;
+        top: 25%;
         width: 100%;
     }
 
@@ -387,31 +402,31 @@ body {
 
     #projects-img {
         right: 0px;
-        top: 25%;
+        top: 0%;
         width: 50%;
     }
 
     #services-img {
         right: -15%;
-        top: 20%;
+        top: -15%;
         width: 65%;
     }
 
     #about-img {
         right: -40%;
-        top: 30%;
+        top: -5%;
         width: 80%;
     }
 
     #home-img {
-        right: -8%;
-        top: -7%;
+        right: -15%;
+        top: -20%;
         width: 50%;
     }
 
     #contact-img {
-        right: -35%;
-        top: 15%;
+        right: -30%;
+        top: -10%;
         width: 100%;
     }
 
