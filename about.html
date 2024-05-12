@@ -47,20 +47,18 @@
 
 
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
+                    <li class="nav-item"  >
+                        <a class="nav-link" href="#" id="profile-call-cont">
                             <img src="./Assets/vectors/phone icon.svg" alt="Phone">
-                        </a>
-                    </li>
-                    <li class="nav-item" id="profile-container">
-                        <a class="nav-link" href="services.html" id="profile-name_link">
-                            <span class="profile-name">Lakshmikanth Reddy</span>
-                            <img src="./Assets/images/Ellipse 5.png" alt="Profile">
+                            <span id="profile-name_link">
+                                <span class="profile-name">Lakshmikanth Reddy</span>
+                                <img src="./Assets/images/Ellipse 5.png" alt="Profile">
+                            </span>
                         </a>
                     </li>
                     <li class="nav-item menu-container">
-                        <a class="nav-link" href="about.html">
-                            <button class="btn btn-dark rounded-pill px-3 py-2">Menu <img class="menu-img"
+                        <a class="nav-link" href="#">
+                            <button onclick="openMenu()" class="btn btn-dark rounded-pill px-3 py-2">Menu <img class="menu-img"
                                     src="./Assets/vectors/menuVector.svg" alt="Menu"></button>
                         </a>
                     </li>
@@ -69,6 +67,97 @@
         </div>
     </nav>
     <!-- NavBar Section Ends. -->
+
+    <!-- Menu page -->
+    <div id="menu-offcanvas" class="d-show">
+        <section class="gallery">
+            <div class="gallery__item gallery__item--1">
+                <a href="./projects.html">
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            Projects
+                        </h3>
+                        <p class="menu-card-text">
+                            Explore our recent ventures and past successes. Dive into a showcase of projects that
+                            exemplify our commitment
+                            to excellence and innovation
+                        </p>
+                        <img id="projects-img" src="./Assets/vectors/menu/projects.svg" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="gallery__item gallery__item--2">
+                <a href="./about.html">
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            About Us
+                        </h3>
+                        <p class="menu-card-text">
+                            Delve into the essence of Geodefiners. Learn about our beginnings, our purpose, driven
+                            mission,
+                            and the values
+                            that define our culture
+                        </p>
+                        <img id="about-img" src="./Assets/vectors/menu/about.svg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery__item gallery__item--4">
+                <a href="./home.html">
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            Home
+                        </h3>
+                        <p class="menu-card-text">
+                            Welcome to Geodefiners. Explore our world of innovative solutions, tailored to elevate your
+                            business to new
+                            heights
+                        </p>
+                        <img id="home-img" src="./Assets/vectors/menu/home.svg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery__item gallery__item--6">
+                <a href="./services.html">
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            Services
+                        </h3>
+                        <p class="menu-card-text">
+                            Discover our comprehensive range of services. From virtual assistance to IT solutions, we
+                            have
+                            the expertise
+                            to meet your business needs
+                        </p>
+                        <img id="services-img" src="./Assets/vectors/menu/services.svg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="gallery__item gallery__item--8">
+                <a href="./contactus.html">
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            Contact Us
+                        </h3>
+                        <p class="menu-card-text">
+                            Get in touch with Geodefiners. Reach out to our dedicated team for personalized assistance,
+                            queries, or
+                            collaborations
+                        </p>
+                        <img id="contact-img" src="./Assets/vectors/menu/contact.svg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="cls-btn-div hero">
+                <img src="./Assets/vectors/menu/close img.svg" onclick="closeMenu()" alt="">
+            </div>
+        </section>
+    </div>
+
 
     <!-- Hero Section. -->
     <div class="container mt-5 pt-5">
@@ -269,7 +358,7 @@
     </div>
 
 
-
+    <script src="./src/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -13,13 +13,15 @@
     --light-blue-color: #024885;
 }
 
-.orange{
+.orange {
     color: var(--orange-color);
 }
-.grey-bg{
+
+.grey-bg {
     background-color: var(--white95);
 }
-.round{
+
+.round {
     border-radius: 25px;
 }
 
@@ -109,11 +111,11 @@ body {
     padding: 0px;
     background-color: var(--white90);
     border-radius: 30px;
+    padding: 12.5px 0px 12.5px 25px !important;
 }
 
 .profile-name {
     color: var(--dark-color);
-    padding: 15px 20px 15px 25px !important;
     opacity: 0.95;
 }
 
@@ -128,9 +130,293 @@ body {
 /* Navbar Styling Ends */
 
 /* Popup */
-.menu-popup{
+#menu-offcanvas {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color:chocolate;
+    height: auto;
+    background-color: var(--white90);
+    z-index: 1000;
+    border-bottom: 1px solid var(--white95);
+}
+
+.menu-card img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.cls-btn-div {
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-card {
+    padding: 0px 10%;
+}
+
+#projects-img {
+    right: 0px;
+    top: 20%;
+    width: 50%;
+}
+
+#services-img {
+    right: -15%;
+    top: 20%;
+    width: 70%;
+}
+
+#about-img {
+    right: -10%;
+    top: 0%;
+    width: 40%;
+}
+
+#home-img {
+    right: 0%;
+    top: 10%;
+    width: 40%;
+}
+
+#contact-img {
+    right: 0%;
+    top: 10%;
+    width: 40%;
+}
+
+.menu-card-head {
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+    color: var(--orange-color);
+    margin-bottom: 0px !important;
+    margin-top: 15px !important;
+}
+
+.menu-card-text {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    max-width: 70%;
+    padding-top: 0px;
+    margin-top: 5px !important;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 5vh);
+    grid-gap: 1.5rem 2rem;
+    padding: 0.5rem 1.5rem;
+    height: auto;
+    max-height: auto;
+    margin: 0px 30px;
+    position: relative;
+}
+
+.gallery__item {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--white95);
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.gallery__item a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.gallery__item--1 {
+    grid-column: span 1;
+    grid-row: span 8;
+}
+
+.gallery__item--2 {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+.gallery__item--4 {
+    grid-column: span 1;
+    grid-row: span 4;
+}
+
+.gallery__item--6 {
+    grid-column: span 1;
+    grid-row: span 8;
+}
+
+.gallery__item--8 {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+.gallery__item-num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    border-bottom-right-radius: 5px;
+    background-color: darksalmon;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-show {
+    display: block;
+}
+
+@media only screen and (max-width: 767px) {
+    .search-rect {
+        margin-left: 0px;
+        justify-content: center !important;
+        margin-bottom: 10px;
+      }
+    #profile-call-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    } 
+    #profile-name_link {
+        padding: 3px 0px 3px 40px !important;
+        margin-left: 5px ;
+    }
+    .menu-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } 
+    .menu-container button{
+        width: 75vw;
+        padding: 5px auto;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #projects-img {
+        right: 0px;
+        top: 25%;
+        width: 50%;
+    }
+
+    #services-img {
+        right: -15%;
+        top: 20%;
+        width: 65%;
+    }
+
+    #about-img {
+        right: -40%;
+        top: 30%;
+        width: 80%;
+    }
+
+    #home-img {
+        right: -8%;
+        top: -7%;
+        width: 50%;
+    }
+
+    #contact-img {
+        right: -35%;
+        top: 15%;
+        width: 100%;
+    }
+
+    .cls-btn-div {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .search-rect {
+        margin-left: 0px;
+        justify-content: center !important;
+        margin-bottom: 10px;
+      }
+    #profile-call-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    } 
+    #profile-name_link {
+        padding: 3px 0px 3px 40px !important;
+        margin-left: 5px ;
+    }
+    .menu-container{
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    } 
+    .menu-container button{
+        width: 310px;
+        padding: 5px auto;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #projects-img {
+        right: 0px;
+        top: 25%;
+        width: 50%;
+    }
+
+    #services-img {
+        right: -15%;
+        top: 20%;
+        width: 65%;
+    }
+
+    #about-img {
+        right: -40%;
+        top: 30%;
+        width: 80%;
+    }
+
+    #home-img {
+        right: -8%;
+        top: -7%;
+        width: 50%;
+    }
+
+    #contact-img {
+        right: -35%;
+        top: 15%;
+        width: 100%;
+    }
+
+    .cls-btn-div {
+        padding: 10px;
+    }
+
 }
