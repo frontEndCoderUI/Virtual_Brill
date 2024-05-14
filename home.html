@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Home org</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css" />
@@ -13,7 +14,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="./src/css/index.css" />
     <link rel="stylesheet" href="./src/css/navbar.css" />
     <link rel="stylesheet" href="./src/css/home.css" />
 </head>
@@ -46,7 +46,7 @@
 
 
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"  >
+                    <li class="nav-item">
                         <a class="nav-link" href="#" id="profile-call-cont">
                             <img src="./Assets/vectors/phone icon.svg" alt="Phone">
                             <span id="profile-name_link">
@@ -68,7 +68,7 @@
     <!-- NavBar Section Ends. -->
 
     <!-- Menu page -->
-    <div id="menu-offcanvas" class="d-show">
+    <div id="menu-offcanvas" class="d-none">
 
         <section class="gallery">
             <div class="gallery__item gallery__item--1">
@@ -88,65 +88,67 @@
             </div>
             <div class="gallery__item gallery__item--2">
                 <a href="./about.html">
-                <div class="menu-card">
-                    <h3 class="menu-card-head">
-                        About Us
-                    </h3>
-                    <p class="menu-card-text">
-                        Delve into the essence of Geodefiners. Learn about our beginnings, our purpose, driven mission,
-                        and the values
-                        that define our culture
-                    </p>
-                    <img id="about-img" src="./Assets/vectors/menu/about.svg" alt="">
-                </div>
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            About Us
+                        </h3>
+                        <p class="menu-card-text">
+                            Delve into the essence of Geodefiners. Learn about our beginnings, our purpose, driven
+                            mission,
+                            and the values
+                            that define our culture
+                        </p>
+                        <img id="about-img" src="./Assets/vectors/menu/about.svg" alt="">
+                    </div>
                 </a>
             </div>
 
             <div class="gallery__item gallery__item--4">
                 <a href="./home.html">
-                <div class="menu-card">
-                    <h3 class="menu-card-head" id="menu-card-home">
-                        Home
-                    </h3>
-                    <p class="menu-card-text">
-                        Welcome to Geodefiners. Explore our world of innovative solutions, tailored to elevate your
-                        business to new
-                        heights
-                    </p>
-                    <img id="home-img" src="./Assets/vectors/menu/home.svg" alt="">
-                </div>
+                    <div class="menu-card" id="menu-card-home">
+                        <h3 class="menu-card-head">
+                            Home
+                        </h3>
+                        <p class="menu-card-text">
+                            Welcome to Geodefiners. Explore our world of innovative solutions, tailored to elevate your
+                            business to new
+                            heights
+                        </p>
+                        <img id="home-img" src="./Assets/vectors/menu/home.svg" alt="">
+                    </div>
                 </a>
             </div>
 
             <div class="gallery__item gallery__item--6">
                 <a href="./services.html">
-                <div class="menu-card">
-                    <h3 class="menu-card-head">
-                        Services
-                    </h3>
-                    <p class="menu-card-text">
-                        Discover our comprehensive range of services. From virtual assistance to IT solutions, we have
-                        the expertise
-                        to meet your business needs
-                    </p>
-                    <img id="services-img" src="./Assets/vectors/menu/services.svg" alt="">
-                </div>
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            Services
+                        </h3>
+                        <p class="menu-card-text">
+                            Discover our comprehensive range of services. From virtual assistance to IT solutions, we
+                            have
+                            the expertise
+                            to meet your business needs
+                        </p>
+                        <img id="services-img" src="./Assets/vectors/menu/services.svg" alt="">
+                    </div>
                 </a>
             </div>
 
             <div class="gallery__item gallery__item--8">
                 <a href="./contactus.html">
-                <div class="menu-card">
-                    <h3 class="menu-card-head">
-                        Contact Us
-                    </h3>
-                    <p class="menu-card-text">
-                        Get in touch with Geodefiners. Reach out to our dedicated team for personalized assistance,
-                        queries, or
-                        collaborations
-                    </p>
-                    <img id="contact-img" src="./Assets/vectors/menu/contact.svg" alt="">
-                </div>
+                    <div class="menu-card">
+                        <h3 class="menu-card-head">
+                            Contact Us
+                        </h3>
+                        <p class="menu-card-text">
+                            Get in touch with Geodefiners. Reach out to our dedicated team for personalized assistance,
+                            queries, or
+                            collaborations
+                        </p>
+                        <img id="contact-img" src="./Assets/vectors/menu/contact.svg" alt="">
+                    </div>
                 </a>
             </div>
 
@@ -159,7 +161,7 @@
     </div>
 
     <!-- Hero Section. -->
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 pt-5" data-aos="fade-in">
         <div class="row">
             <div class="col-lg-6">
                 <!-- Hero Section Content -->
@@ -223,7 +225,7 @@
                 </div>
             </div>
 
-            <div class="float-box">
+            <div class="float-box" data-aos="flip-left">
                 <ul class="float-box-ul">
                     <li>01</li>
                     <li>02</li>
@@ -241,9 +243,9 @@
     </div>
 
     <!-- define excellence Section. -->
-    <div class="container define-section">
+    <div class="container define-section mt-4" data-aos="zoom-in-right" >
 
-        <div class="row">
+        <div class="row" >
             <div class="col-lg-6">
                 <div class="defining-head">
                     <h3>Defining Excellence Through</h3>
@@ -276,7 +278,7 @@
             </div>
         </div>
 
-        <div class="row px-4">
+        <div class="row px-4" >
             <div class="col-lg-6">
                 <div class="it-soln-section col-lg-11">
                     <h3 class="it-soln-head">IT Solutions</h3>
@@ -333,7 +335,7 @@
     </div>
 
     <!-- Choose Pinnacle Section-->
-    <div class="container choose-excellence">
+    <div class="container choose-excellence" data-aos="zoom-in-right">
 
         <div class="row">
             <div class="col-lg-6">
@@ -384,7 +386,7 @@
     </div>
 
     <!-- Our Valued Partners Section-->
-    <div class="container other-valued-section">
+    <div class="container other-valued-section" data-aos="zoom-in-right">
         <div class="row">
 
             <div class="col-lg-12">
@@ -481,7 +483,7 @@
     </div>
 
     <!-- The Geodefiners Edge Section-->
-    <div class="container geodefine-edge-section">
+    <div class="container geodefine-edge-section" data-aos="zoom-in-right">
         <div class="row">
             <div class="col-lg-7">
                 <h3 class="geodefine-edge-head">The <span class="orange-text">Geodefiners</span> Edge</h3>
@@ -498,7 +500,7 @@
         </div>
 
         <div class="row geodefine-card-section1">
-            <div class="gcard1 col-lg-12 my-3 d-flex align-items-center justify-content-between">
+            <div class="gcard1 col-lg-12 my-3 d-flex align-items-center justify-content-between" >
 
                 <img src="./Assets/vectors/p1v5/01.svg" alt="">
                 <img src="./Assets/vectors/p1v5/2.svg" alt="">
@@ -517,7 +519,7 @@
     </div>
 
     <!-- get-in-touch  Section-->
-    <div class="container get-in-touch-section">
+    <div class="container get-in-touch-section" data-aos="zoom-in-right">
         <div class="row">
             <div class="col-lg-6 get-in-touch-form mx-2">
                 <div class="head-cont d-flex align-items-center justify-content-between mb-2 mt-1">
@@ -586,6 +588,17 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // offset: 0, // offset (in px) from the original trigger point
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            // easing: 'ease-out', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false,
+        });
+
+    </script>
 </body>
 
 </html>
