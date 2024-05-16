@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Contact Us</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css" />
@@ -160,8 +161,7 @@
     <!-- Hero Section. -->
     <div class="container my-5 pt-5">
         <div class="row">
-
-            <div class="col-lg-6 col-md-6 col-sm-6 pr-5">
+            <div class="col-lg-6 col-md-6 col-sm-6 pr-5" data-aos="fade-right">
                 <!-- Hero Section Content -->
                 <div class="hero-text mb-4 mt-2">
                     <span class="abt-us-head">Contact Us</span>
@@ -185,7 +185,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6" data-aos="fade-left">
                 <!-- Hero Image -->
                 <div class="hero-img">
                     <img src="./Assets/vectors/contactus/hero.svg" alt="hero image" />
@@ -199,11 +199,10 @@
     <div class="container get-in-touch-section">
         <div class="row">
 
-            <div class="col-lg-6 col-md-6 col-sm-6 get-in-touch-form mr-1">
+            <div class="col-lg-6 col-md-6 col-sm-6 get-in-touch-form mr-1" data-aos="fade-right">
                 <div class="head-cont d-flex align-items-center justify-content-between mb-2 mt-1">
                     <div>
                         <h3 class="gnt-h">Hit Us Up!</h3>
-
                     </div>
                     <div>
                         <button type="button" id="submi-btnn" class="btn btn">Submit</button>
@@ -233,7 +232,7 @@
                 </form>
             </div>
 
-            <div class="col-lg-5 col-md-5 col-sm-5 get-in-touch-contact">
+            <div class="col-lg-5 col-md-5 col-sm-5 get-in-touch-contact" data-aos="fade-left">
                 <h5 class="get-in-touch-head">
                     Contact Information
                 </h5>
@@ -262,7 +261,7 @@
 
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 get-in-touch-contact p-0">
-                <div class="hero-img">
+                <div class="hero-img" data-aos="fade-up">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.9612142290675!2d78.34295967497013!3d17.46157040066419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85211177df6ffbfb%3A0xe82b1ddd881651bc!2sPrapad%20Technologies!5e0!3m2!1sen!2sin!4v1701760472696!5m2!1sen!2sin"
                         style="border:0; border-radius: 20px; width: 100%; height: 500px; margin-top: 10px;" allowfullscreen=""
@@ -276,7 +275,7 @@
 
     <div class="container schedule-appointment-section mt-5 mb-4">
         <div class="row">
-            <div class="col-lg-7 col-md-7 col-sm-7">
+            <div class="col-lg-7 col-md-7 col-sm-7" data-aos="fade-right">
                 <h3 class="geodefine-edge-head">Schedule an Appointment with Geodefiners</h3>
                 <p class="geodefine-edge-text">
                     Ready to discuss your business needs with us? Use the calendar below to schedule an appointment at
@@ -287,7 +286,7 @@
         </div>
 
         <div class="row my-3 mx-1">
-            <div class="col-lg-4 col-md-4 col-sm-4 date-picker-section p-3">
+            <div class="col-lg-4 col-md-4 col-sm-4 date-picker-section p-3" data-aos="fade-right">
 
                 <form id="date-form">
                     <div class="form-row">
@@ -307,7 +306,7 @@
 
             <div class="col-lg-8 col-md-8 col-sm-8 working-hr-section d-flex justify-content-between flex-column">
 
-                <div class="col-lg-3 col-md-3 col-sm-3 working-hr-card p-3 mb-3">
+                <div class="col-lg-3 col-md-3 col-sm-3 working-hr-card p-3 mb-3" data-aos="fade-up">
                     <div class="working-hr-card-head pb-1">
                         <h6> Working Hours </h6>
                     </div>
@@ -323,7 +322,7 @@
                     </div>
                 </div>
                 <div class="working-spacer my-2"></div>
-                <div class="steps-div">
+                <div class="steps-div" data-aos="fade-left">
                     <ol>
                         <li>Select a date and time from the available slots on the calendar.</li>
                         <li>Fill out the form with your name, email address, and any additional information or
@@ -339,7 +338,7 @@
 
         <div class="row align-items-start share-req-section mt-5 mx-1">
 
-            <div class="col-lg-8 col-md-8 col-sm-8 share-ur-req py-3 px-4">
+            <div class="col-lg-8 col-md-8 col-sm-8 share-ur-req py-3 px-4" data-aos="fade-right">
 
                 <h3>Share Your Requirements</h3>
                 <form id="share-form-container">
@@ -364,7 +363,7 @@
                 </form>
             </div>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 note-section">
+        <div class="col-lg-4 col-md-4 col-sm-4 note-section" data-aos="fade-left">
             <h3>Note</h3>
             <p class="note-text">
 
@@ -381,6 +380,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false,
+        });
+    </script>
 </body>
 
 </html>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>About Us</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="./src/css/bootstrap/bootstrap.min.css" />
@@ -160,16 +162,16 @@
 
 
     <!-- Hero Section. -->
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 pt-5" >
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
                 <!-- Hero Image -->
                 <div class="hero-img">
                     <img src="./Assets//vectors/aboutus/hero abt.svg" />
                 </div>
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <!-- Hero Section Content -->
                 <div class="hero-text mb-4 mt-2">
                     <span class="abt-us-head">About Us</span>
@@ -180,7 +182,7 @@
                     </span>
                 </div>
 
-                <div class="hero-text-desc">
+                <div class="hero-text-desc" data-aos="fade-left">
                     <div class="hero-text-p">
                         <p class="mb-3">
                             Welcome to Geodefiners, your gateway to cutting-edge technology solutions and transformative
@@ -219,7 +221,7 @@
     </div>
 
     <!-- Section 2. -->
-    <div class="container">
+    <div class="container" data-aos="fade-right">
         <div class="row my-4">
             <div class="text1">
                 <span class="main-text">
@@ -239,8 +241,7 @@
     <div class="container mission-section my-4">
         <div class="row px-4 py-4 ml-2">
             <div class="col-lg-6">
-
-                <div class="mission-cont">
+                <div class="mission-cont" data-aos="fade-right">
                     <div class="mission-head">
                         <span class="mission-text">
                             Our Mission
@@ -255,7 +256,7 @@
                     </p>
                 </div>
 
-                <div class="mission-cont">
+                <div class="mission-cont" data-aos="fade-right">
                     <div class="mission-head">
                         <span class="mission-text">
                             Our Values
@@ -270,7 +271,7 @@
                     </p>
                 </div>
 
-                <div class="mission-cont">
+                <div class="mission-cont" data-aos="fade-right">
                     <div class="mission-head">
                         <span class="mission-text">
                             Our Team
@@ -293,33 +294,33 @@
         <div class="row">
             <div class="col-lg-6 approach-section py-4 px-4">
                 <div class="mission-cont">
-                    <div class="mission-head">
+                    <div class="mission-head" data-aos="fade-right">
                         <span class="mission-text" id="approach-text-head">
                             Our Approach
                         </span>
                     </div>
-                    <p class="approach-desc mb-3">
+                    <p class="approach-desc mb-3" data-aos="fade-right">
                         At Geodefiners, we take a client-centric approach to everything we do. We believe in
                         understanding the unique needs and challenges of each client and tailoring our solutions to meet
                         their specific requirements. We don't just deliver projects; we build long-lasting partnerships
                         based on trust, collaboration, and mutual success
                     </p>
-                    <div class="approach-img my-3">
+                    <div class="approach-img my-3" data-aos="fade-up">
                         <img src="./Assets/vectors/aboutus/ourappr.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 impact-section py-4 px-4">
                 <div class="mission-cont">
-                    <div class="approach-img">
+                    <div class="approach-img" data-aos="fade-down">
                         <img src="./Assets/vectors/aboutus/ourimp.svg" alt="">
                     </div>
-                    <div class="mission-head">
+                    <div class="mission-head" data-aos="fade-left">
                         <span class="mission-text" id="approach-text-head">
                             Our Impact
                         </span>
                     </div>
-                    <p class="approach-desc mb-0 pb-0">
+                    <p class="approach-desc mb-0 pb-0" data-aos="fade-left">
                         Over the years, Geodefiners has had the privilege of working with a diverse range of clients
                         across various industries. From startups to established companies, we have helped businesses of
                         all sizes achieve their goals and unlock their full potential. Our track record of success
@@ -334,7 +335,7 @@
     <div class="container my-4">
         <div class="row">
             <div class="col-lg-6">
-                <div class="mission-cont">
+                <div class="mission-cont" data-aos="fade-right">
                     <div class="mission-head">
                         <span class="mission-text" id="approach-text-head">
                             Join Us
@@ -346,10 +347,10 @@
                         or a fresh graduate, there's a place for you in our dynamic and vibrant community. Together,
                         let's continue to crack the code of innovation and redefine what's possible in the digital world
                     </p>
-                    <button class="btn btn-dark px-4" id="contact-us-btn">Contact Us</button>
+                    <button class="btn btn-dark px-4" id="contact-us-btn" data-aos="fade-up">Contact Us</button>
                 </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
                 <div class="approach-img">
                     <img src="./Assets/vectors/aboutus/joinus.svg" alt="">
                 </div>
@@ -362,6 +363,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false,
+        });
+    </script>
 </body>
 
 </html>
