@@ -19,6 +19,9 @@
     height: auto;
 }
 
+.pointer{
+    cursor: pointer;
+}
 .abt-us-head {
     color: var(--orange-color);
     font-size: 60px;

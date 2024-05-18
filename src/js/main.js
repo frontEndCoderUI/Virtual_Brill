@@ -23,3 +23,16 @@ function closeMenu() {
   menuBtnEl.classList.remove("d-show");
   menuBtnEl.classList.add("d-none");
 }
+
+// Service Page navigation 
+function navToVAssign(){
+  window.location.href = './virtual-assistance.html'
+}
+
+function navToItSoln(){
+  window.location.href = './it-solutions.html'
+}
+
+function navToAdminService(){
+  window.location.href = './admin-services.html'
+}

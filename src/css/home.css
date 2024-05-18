@@ -155,16 +155,24 @@ span:nth-child(2) {
   padding: 0px;
   list-style-position: outside;
 }
-
-.float-box-ul li {
+.float-box-ul a{
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--dark-color);
+}
+.float-box-ul li{
   list-style: none;
   padding: 5px 20px;
-  cursor: pointer;
   border-bottom: 1px solid var(--white85);
 }
+
 .float-box-ul li:last-child {
   border-bottom: none;
 }
+.float-box-ul a:hover{
+  opacity: 0.85;
+}
+
 /* Hero Section completed */
 
 
