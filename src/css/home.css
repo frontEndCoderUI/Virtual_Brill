@@ -8,8 +8,8 @@
   --white90: #e6e6e6;
   --white85: #d9d9d9;
   --white40: #666666;
-  --heavyDark-color: #1B1B1B;
-  --dark-green-color: #92C80C;
+  --heavyDark-color: #1b1b1b;
+  --dark-green-color: #92c80c;
   --light-blue-color: #024885;
 }
 
@@ -33,7 +33,6 @@
   max-width: 100%;
   height: auto;
 }
-
 
 /* Hero Content style starts */
 .hero-text {
@@ -155,12 +154,12 @@ span:nth-child(2) {
   padding: 0px;
   list-style-position: outside;
 }
-.float-box-ul a{
+.float-box-ul a {
   text-decoration: none;
   cursor: pointer;
   color: var(--dark-color);
 }
-.float-box-ul li{
+.float-box-ul li {
   list-style: none;
   padding: 5px 20px;
   border-bottom: 1px solid var(--white85);
@@ -169,13 +168,11 @@ span:nth-child(2) {
 .float-box-ul li:last-child {
   border-bottom: none;
 }
-.float-box-ul a:hover{
+.float-box-ul a:hover {
   opacity: 0.85;
 }
 
 /* Hero Section completed */
-
-
 
 /* Define Section starts */
 .define-section {
@@ -314,7 +311,11 @@ span:nth-child(2) {
   max-width: 40%;
   color: var(--white);
 }
-
+.down-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 .mobile-app-dev {
   padding: 30px 30px;
   color: var(--white);
@@ -342,7 +343,6 @@ span:nth-child(2) {
 
 /* Define Section ends */
 
-
 /* Choose-excellence Section starts */
 .choose-excellence {
   margin: 20px auto;
@@ -361,7 +361,7 @@ span:nth-child(2) {
 
 .excellence-details-text,
 .man-laptop-text {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -416,8 +416,6 @@ span:nth-child(2) {
 
 /* Choose-excellence Section ends */
 
-
-
 /* Other-valued Section Starts */
 
 .other-valued-section {
@@ -433,13 +431,13 @@ span:nth-child(2) {
 }
 
 .other-valued-section::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
   width: 40%;
   height: 50%;
-  background-image: url('/Assets/vectors/p1v4/bgImage.svg');
+  background-image: url("/Assets/vectors/p1v4/bgImage.svg");
   /* URL of your background image */
   background-size: cover;
   /* Adjust the size of the background image */
@@ -518,7 +516,6 @@ span:nth-child(2) {
 
 /* Other-valued Section ends */
 
-
 /* feed_back Section starts */
 .feed_back_section {
   margin: 30px auto;
@@ -571,7 +568,6 @@ span:nth-child(2) {
 
 /* feed_back Section ends */
 
-
 /* geodefine-edge Section starts */
 
 .geodefine-edge-section {
@@ -604,8 +600,6 @@ span:nth-child(2) {
 
 /* geodefine-edge Section ends */
 
-
-
 /* get-in-touch-section-edge Section starts */
 .get-in-touch-section {
   background-color: var(--orange-color);
@@ -618,13 +612,13 @@ span:nth-child(2) {
 }
 
 .get-in-touch-section::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 5%;
   right: 0;
   width: 50%;
   height: 100%;
-  background-image: url('/Assets/vectors/p1v6/bg\ image.svg');
+  background-image: url("/Assets/vectors/p1v6/bg\ image.svg");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -652,7 +646,6 @@ span:nth-child(2) {
   text-align: center;
   padding: 5px 20px;
   margin-bottom: 8px;
-
 }
 
 #form-container input,
@@ -710,17 +703,14 @@ span:nth-child(2) {
 
 /* get-in-touch-section-edge Section ends */
 
-
 /* For Mobile */
 @media only screen and (max-width: 767px) {
   .search-rect {
     margin-left: 0px;
   }
-
   .float-box {
     display: none;
   }
-
   .define-section {
     margin: 10px auto;
   }
@@ -760,7 +750,9 @@ span:nth-child(2) {
     left: 10%;
     color: var(--white);
   }
-
+  .down-btn {
+    width: 20%;
+  }
   #man-with-laptop-readmore {
     position: absolute;
     top: 45%;
@@ -792,7 +784,9 @@ span:nth-child(2) {
   .search-rect {
     margin-left: 0px;
   }
-
+  #submit-btn {
+    width: 80%;
+  }
   .float-box {
     display: none;
   }
@@ -836,7 +830,9 @@ span:nth-child(2) {
     left: 10%;
     color: var(--white);
   }
-
+  .down-btn {
+    width: 20%;
+  }
   #man-with-laptop-readmore {
     position: absolute;
     top: 50%;
