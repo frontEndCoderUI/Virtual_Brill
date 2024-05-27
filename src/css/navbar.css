@@ -437,4 +437,7 @@ body {
   .cls-btn-div {
     padding: 10px;
   }
+  #main-head {
+    margin-top: 60px !important;
+  }
 }

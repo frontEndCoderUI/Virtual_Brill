@@ -43,6 +43,10 @@
   p {
     margin-top: 0px;
     margin-bottom: 10px;
+    cursor: pointer;
+  }
+  p:hover {
+    opacity: 0.85;
   }
 }
 
@@ -321,16 +325,15 @@ span:nth-child(2) {
   color: var(--white);
   background-color: var(--orange-color);
   border-radius: 20px;
+}
+.mobile-app-head {
+  font-size: 24px;
+  font-weight: 600 !important;
+}
 
-  .mobile-app-head {
-    font-size: 24px;
-    font-weight: 600 !important;
-  }
-
-  .mobile-app-para {
-    font-size: 18px;
-    font-weight: 400 !important;
-  }
+.mobile-app-para {
+  font-size: 18px;
+  font-weight: 400 !important;
 }
 
 .btn.btn-dark {
@@ -339,6 +342,7 @@ span:nth-child(2) {
   font-weight: 500 !important;
   background-color: #444444;
   padding: 10px 15px;
+  cursor: pointer;
 }
 
 /* Define Section ends */
@@ -412,6 +416,7 @@ span:nth-child(2) {
   position: absolute;
   top: 63%;
   left: 67%;
+  cursor: pointer;
 }
 
 /* Choose-excellence Section ends */
@@ -464,6 +469,7 @@ span:nth-child(2) {
 #visit-project-btn {
   float: right;
   top: 10px;
+  cursor: pointer;
 }
 
 #card_container_div .card {
@@ -596,6 +602,7 @@ span:nth-child(2) {
   position: absolute;
   top: 36%;
   left: 66%;
+  cursor: pointer;
 }
 
 /* geodefine-edge Section ends */

@@ -17,6 +17,27 @@ window.addEventListener("DOMContentLoaded", function () {
   const menuBtnEl = document.getElementById("menu-offcanvas");
   menuBtnEl.classList.remove("d-show");
   menuBtnEl.classList.add("d-none");
+
+  const currentUrl = window.location.href;
+
+  // Create a URL object
+  const url = new URL(currentUrl);
+
+  // Check if the 'type' parameter exists
+  if (url.searchParams.has("type")) {
+    const params = new URLSearchParams(window.location.search);
+    const servType = params.get("type");
+    if (servType === "it") {
+      navToItSoln("va");
+    } else if (servType === "admin") {
+      navToAdminService("va");
+    }
+    // Remove the 'type' parameter
+    url.searchParams.delete("type");
+
+    // Update the browser's URL without reloading the page
+    window.history.pushState({}, document.title, url.pathname + url.search);
+  }
 });
 
 function openMenu() {
@@ -28,6 +49,19 @@ function closeMenu() {
   const menuBtnEl = document.getElementById("menu-offcanvas");
   menuBtnEl.classList.remove("d-show");
   menuBtnEl.classList.add("d-none");
+}
+
+function navToProjectsPage() {
+  window.location.href = "./projects.html";
+}
+function navToServicesPage() {
+  window.location.href = "./services.html";
+}
+function navToAboutUsPage() {
+  window.location.href = "./about.html";
+}
+function navToContactUsPage() {
+  window.location.href = "./contactus.html";
 }
 
 // Service Page navigation

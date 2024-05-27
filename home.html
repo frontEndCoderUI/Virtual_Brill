@@ -206,7 +206,7 @@
 
                 <div class="portfolio-explore">
                     <div class="portfolio-head">
-                        <div class="portfolio-head-text">
+                        <div class="portfolio-head-text" onclick="navToProjectsPage()">
                             <p>Explore Our Work</p>
                             <p class="portfolio-arrow-img">
                                 <img width="12px" src="./Assets/vectors/portfolio-arrow.svg" />
@@ -259,9 +259,10 @@
                 <ul class="float-box-ul">
                     <li> <a href="./services.html"> 01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Virtual Assistance</a>
                     </li>
-                    <li> <a href="./it-solutions.html"> 02 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IT Solutions</a>
+                    <li> <a href="./services.html?type=it"> 02 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; IT
+                            Solutions</a>
                     </li>
-                    <li> <a href="./admin-services.html"> 03 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Admin
+                    <li> <a href="./services.html?type=admin"> 03 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Admin
                             Services</a></li>
                 </ul>
 
@@ -271,9 +272,8 @@
 
     <!-- define excellence Section. -->
     <div class="container define-section mt-4">
-
         <div class="row">
-            <div class="col-lg-6" data-aos="fade-right">
+            <div class="col-lg-6 pl-5" data-aos="fade-right">
                 <div class="defining-head">
                     <h3>Defining Excellence Through</h3>
                     <p>Crafting solutions that redefine success and elevate your <br>
@@ -306,7 +306,9 @@
         </div>
 
         <div class="row px-4">
+
             <div class="col-lg-6">
+
                 <div class="it-soln-section col-lg-11" data-aos="fade-up">
                     <h3 class="it-soln-head">IT Solutions</h3>
                     <p class="it-soln-para">Empower your digital presence with our comprehensive IT
@@ -314,6 +316,12 @@
                         Cloud Computing and Custom Software, we transform
                         your ideas into cutting-edge technological solutions.</p>
                 </div>
+                <!-- <div class="it-soln-section col-lg-11" data-aos="fade-up">
+                    <h3 class="it-soln-head">Virtual Assistance</h3>
+                    <p class="it-soln-para">Efficiently navigate your business landscape with our Virtual Assistance
+                        services. From buyer and seller support to property management, we provide seamless solutions
+                        tailored to your real estate needs.</p>
+                </div> -->
 
                 <div class="vr-base col-lg-11" data-aos="fade-up">
                     <div class="vr-box">
@@ -325,7 +333,6 @@
             </div>
 
             <div class="col-lg-6">
-
                 <div class="tab-chat-section width my-1 d-flex align-items-center justify-content-between"
                     data-aos="fade-left">
                     <div class="tab-img-container">
@@ -336,7 +343,6 @@
                             <img width="100%" src="./Assets/vectors/p1v2/Rectangle 53.png" alt="" class="chat-rect">
                         </div>
                         <img src="./Assets/vectors/p1v2/arrowDown.svg" class="down-btn" alt="">
-
                     </div>
                 </div>
                 <div data-aos="fade-up">
@@ -358,14 +364,13 @@
                             <span class="mx-4">1/5</span>
                         </div>
                         <div class="visit-btn">
-                            <button class="btn btn-dark">Visit Services</button>
+                            <button onclick="navToServicesPage()" class="btn btn-dark">Visit Services</button>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-
     </div>
 
     <!-- Choose Pinnacle Section-->
@@ -411,7 +416,8 @@
             <div class="col-lg-6">
                 <div class="man-with-laptop mb-2 mt-3" data-aos="fade-left">
                     <img id="man-with-laptop-img" src="./Assets/vectors/p1v3/Rectangle 37.svg" alt="">
-                    <img id="man-with-laptop-readmore" src="./Assets/vectors/p1v3/read more button.svg" alt="">
+                    <img id="man-with-laptop-readmore" onclick="navToAboutUsPage()"
+                        src="./Assets/vectors/p1v3/read more button.svg" alt="">
                 </div>
                 <div class="man-laptop-text" data-aos="fade-up">
                     <p>we are architects of innovation, dedicated to propelling your business forward with efficiency,
@@ -428,8 +434,8 @@
         <div class="row">
 
             <div class="col-lg-12" data-aos="fade-right">
-                <img id="visit-project-btn" src="./Assets/vectors/p1v4/view projects btn.svg" alt=""
-                    class="visit-button" data-aos="fade-down">
+                <img id="visit-project-btn" onclick="navToProjectsPage()"
+                    src="./Assets/vectors/p1v4/view projects btn.svg" alt="" class="visit-button" data-aos="fade-down">
 
                 <h3 class="valued-head col-lg-9">Our Valued Partners</h3>
                 <p class="value-text col-lg-9">
@@ -533,7 +539,8 @@
             </div>
             <div class="col-lg-5 geodefine-edge-right" data-aos="fade-down">
                 <img src="./Assets/vectors/p1v5/man with headset.svg" alt="" class="geodefine-img">
-                <img src="/Assets/vectors/p1v5/read more button.svg" alt="" class="geodefine-rm-btn">
+                <img src="/Assets/vectors/p1v5/read more button.svg" onclick="navToAboutUsPage()" alt=""
+                    class="geodefine-rm-btn">
             </div>
         </div>
 
@@ -613,7 +620,7 @@
 
                 <div class="get-in-touch-details" data-aos="fade-up">
                     <p class="email">
-                        Email: lachi@geodefiners.com <br>
+                        Email: nfo@geodefiners.com, lachi@geodefiners.com <br>
                         Phone: (+91) 994 9999 430 <br>
                         Office: 501 Sri Nidhi Pride, Near Hitex Exhibition Centre, Hyderabad, <br>
                         Telangana, India - 500084
