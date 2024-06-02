@@ -241,17 +241,6 @@
             </div>
 
             <div class="float-box" data-aos="fade-up">
-                <!-- <ul class="float-box-ul">
-                    <li>01</li>
-                    <li>02</li>
-                    <li>03</li>
-                </ul>
-                <ul class="float-box-ul">
-                    <li>Virtual Assistance</li>
-                    <li>IT Solutions</li>
-                    <li>Admin Services</li>
-                </ul> -->
-
                 <ul class="float-box-ul">
                     <li> <a href="./services.html"> 01 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Virtual Assistance</a>
                     </li>
@@ -261,13 +250,14 @@
                     <li> <a href="./services.html?type=admin"> 03 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Admin
                             Services</a></li>
                 </ul>
-
             </div>
         </div>
     </div>
 
-    <!-- define excellence Section. -->
-    <div class="container define-section mt-4">
+    <!-- define excellence Section Starts. -->
+
+    <!-- 1. define excellence Section Starts. -->
+    <div class="container define-section mt-4" id="define-va">
         <div class="row">
             <div class="col-lg-6 pl-5" data-aos="fade-right">
                 <div class="defining-head">
@@ -282,18 +272,273 @@
                     <div class="col-4"></div>
                     <div class="service-icons-section col-md-8 col-sm-8">
                         <div class="section">
-                            <div class="icon-rect1" id="virtual-icon">
-                                <!-- <span "></span> -->
+                            <div class="icon-rect1 orange-bg" id="virtual-icon1">
                             </div>
                             <p class="icon-text">Virtual<br>Assistance</p>
                         </div>
                         <div class="section">
-                            <div class="icon-rect2" id="it-icon"></div>
+                            <div class="icon-rect2 grey-bg pointer" id="it-icon1"
+                                onclick="showDefineSection('va', 'it')"></div>
                             <p class="icon-text">IT <br>Solutions</p>
                         </div>
                         <div class="section">
-                            <div class="icon-rect3" id="admin-icon"></div>
+                            <div class="icon-rect3 grey-bg pointer" id="admin-icon"
+                                onclick="showDefineSection('va', 'admin')">
+                            </div>
                             <p class="icon-text">Admin <br>Services</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row px-4">
+
+            <div class="col-lg-6">
+
+                <div class="it-soln-section col-lg-11" data-aos="fade-up">
+                    <h3 class="it-soln-head">Virtual Assistance</h3>
+                    <p class="it-soln-para">Efficiently navigate your business landscape with our Virtual Assistance
+                        services. From buyer and seller support to property management, we provide seamless solutions
+                        tailored to your real estate needs.</p>
+                </div>
+                <div class="vr-base col-lg-11" data-aos="fade-up">
+                    <div class="vr-box">
+                        <div class="vr-img-container">
+                            <p class="yoeText">years of experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="tab-chat-section width my-1 d-flex align-items-center justify-content-between"
+                    data-aos="fade-left">
+
+                    <!-- For carousel all 6 images -->
+                    <!-- First one is default displayed -->
+                    <div class="tab-img-container p1-c1">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-1/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c2 d-none">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-2/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c3 d-none">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-3/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c4 d-none">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-4/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c5 d-none">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-5/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c6 d-none">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-6/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c7 d-none">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-7/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c8 d-none">
+                        <img width="100%" src="./Assets/vectors/p1v2/virtual-assiatance/carousel-8/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <!-- For carousel all 8 images -->
+
+                    <!-- Constant for all slides -->
+                    <div class="chat-section">
+                        <div class="chat-box">
+                            <img width="100%" src="./Assets/vectors/p1v2/Rectangle 53.png" alt="" class="chat-rect">
+                        </div>
+                        <img src="./Assets/vectors/p1v2/arrowDown.svg" class="down-btn" alt="">
+                    </div>
+                    <!-- Constant for all slides -->
+                </div>
+
+                <div data-aos="fade-up">
+
+                    <!-- For carousel all 8 cards -->
+
+                    <div class="mobile-app-dev p1-c1 my-3">
+                        <h3 class="mobile-app-head">Appointment Scheduling</h3>
+                        <p class="mobile-app-para mb-0">
+                            Efficiently manage meetings and events with our streamlined Appointment Scheduling service,
+                            handling all tasks from setting appointments to managing conflicts.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c2 my-3 d-none">
+                        <h3 class="mobile-app-head">Document Organization</h3>
+                        <p class="mobile-app-para mb-0">
+                            Stay organized with our Document Organization service, categorizing and managing your
+                            documents for easy access and streamlined workflows, whether digital or physical.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c3 my-3 d-none">
+                        <h3 class="mobile-app-head">Travel Arrangements</h3>
+                        <p class="mobile-app-para mb-0">
+                            Leave travel planning to us with our Travel Arrangements service, handling flights,
+                            accommodations, and itinerary planning for stress-free travel experiences
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c4 my-3 d-none">
+                        <h3 class="mobile-app-head">Meeting Coordination</h3>
+                        <p class="mobile-app-para mb-0">
+                            Ensure productive meetings with our Meeting Coordination service, handling logistics from
+                            scheduling to follow-up tasks for seamless in-person or virtual meetings
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c5 my-3 d-none">
+                        <h3 class="mobile-app-head">Report Preparation</h3>
+                        <p class="mobile-app-para mb-0">
+                            Prepare comprehensive reports effortlessly with our Report Preparation service, handling
+                            data analysis, formatting, and presentation for informed decision-making.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c6 my-3 d-none">
+                        <h3 class="mobile-app-head">Expense Tracking</h3>
+                        <p class="mobile-app-para mb-0">
+                            Stay on top of finances with our Expense Tracking service, managing expenses, categorizing
+                            transactions, and generating detailed reports for better financial visibility.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c7 my-3 d-none">
+                        <h3 class="mobile-app-head">Vendor Management</h3>
+                        <p class="mobile-app-para mb-0">
+                            Simplify vendor relationships with our Vendor Management service, handling communication,
+                            negotiation, and coordination for optimal efficiency and cost savings.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c8 my-3 d-none">
+                        <h3 class="mobile-app-head">Data Entry</h3>
+                        <p class="mobile-app-para mb-0">
+                            Streamline business processes with our Data Entry service, providing accurate and efficient
+                            data entry solutions to free up time for strategic tasks.
+                        </p>
+                    </div>
+                    <!-- For carousel all 8 cards -->
+
+                    <div class="page-navigate d-flex align-items-center justify-content-between">
+                        <!-- For carousel all 6 nav button group -->
+                        <div class="p1-c1">
+                            <span class="updates-nav-center"><img style="cursor:text; opacity: 0.7;"
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-1/left-arrow.svg" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-1/right-arrow.svg"
+                                    onclick="navp1Next(2)" /></span>
+                            <span class="page-text mx-4">1/8</span>
+                        </div>
+                        <div class="p1-c2 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-2/left-arrow.svg"
+                                    onclick="navp1Prev(1)" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-2/right-arrow.svg"
+                                    onclick="navp1Next(3)" /></span>
+                            <span class="page-text mx-4">2/8</span>
+                        </div>
+                        <div class="p1-c3 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-3/left-arrow.svg"
+                                    onclick="navp1Prev(2)" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-3/right-arrow.svg"
+                                    onclick="navp1Next(4)" /></span>
+                            <span class="page-text mx-4">3/8</span>
+                        </div>
+                        <div class="p1-c4 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-4/left-arrow.svg"
+                                    onclick="navp1Prev(3)" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-4/right-arrow.svg"
+                                    onclick="navp1Next(5)" /></span>
+                            <span class="page-text mx-4">4/8</span>
+                        </div>
+                        <div class="p1-c5 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-5/left-arrow.svg"
+                                    onclick="navp1Prev(4)" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-5/right-arrow.svg"
+                                    onclick="navp1Next(6)" /></span>
+                            <span class="page-text mx-4">5/8</span>
+                        </div>
+                        <div class="p1-c6 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-6/left-arrow.svg"
+                                    onclick="navp1Prev(5)" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-6/right-arrow.svg"
+                                    onclick="navp1Next(7)" /></span>
+                            <span class="page-text mx-4">6/8</span>
+                        </div>
+                        <div class="p1-c7 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-7/left-arrow.svg"
+                                    onclick="navp1Prev(6)" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-7/right-arrow.svg"
+                                    onclick="navp1Next(8)" /></span>
+                            <span class="page-text mx-4">7/8</span>
+                        </div>
+                        <div class="p1-c8 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/p1v2/virtual-assiatance/carousel-8/left-arrow.svg"
+                                    onclick="navp1Prev(7)" /></span>
+                            <span><img src="./Assets/vectors/p1v2/virtual-assiatance/carousel-8/right-arrow.svg"
+                                    style="cursor: text; opacity: 0.7;" /></span>
+                            <span class="page-text mx-4">8/8</span>
+                        </div>
+                        <!-- For carousel all 6 nav button group -->
+
+                        <!-- Constant for all slides -->
+                        <div class="visit-btn">
+                            <button onclick="navToServicesPage()" class="btn btn-dark">Visit Services</button>
+                        </div>
+                        <!-- Constant for all slides -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1. define excellence Section Ends. -->
+
+    <!-- 2. define excellence Section Starts. -->
+    <div class="container define-section mt-4 d-none" id="define-it">
+        <div class="row">
+            <div class="col-lg-6 pl-5" data-aos="fade-right">
+                <div class="defining-head">
+                    <h3>Defining Excellence Through</h3>
+                    <p>Crafting solutions that redefine success and elevate your <br>
+                        business journey</p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-down">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="service-icons-section col-md-8 col-sm-8">
+                        <div class="section">
+                            <div class="icon-rect1 grey-bg pointer" id="virtual-icon"
+                                onclick="showDefineSection('it','va')">
+                            </div>
+                            <p class="icon-text">Virtual<br>Assistance</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-rect2 orange-bg" id="it-icon"></div>
+                            <p class="icon-text">IT<br>Solutions</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-rect3 grey-bg pointer" id="admin-icon"
+                                onclick="showDefineSection('it', 'admin')">
+                            </div>
+                            <p class="icon-text">Admin<br>Services</p>
                         </div>
                     </div>
                 </div>
@@ -324,18 +569,49 @@
             <div class="col-lg-6">
                 <div class="tab-chat-section width my-1 d-flex align-items-center justify-content-between"
                     data-aos="fade-left">
-                    <div class="tab-img-container">
+
+                    <!-- For carousel all 6 images -->
+                    <!-- First one is default displayed -->
+                    <div class="tab-img-container p1-c1">
                         <img width="100%" src="./Assets/vectors/p1v2/tabInhand.png" alt="" class="tab-img">
                     </div>
+                    <div class="tab-img-container p1-c2 d-none">
+                        <img width="100%" src="./Assets/vectors/It-soln-carousel/carousel-2/web-dev.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c3 d-none">
+                        <img width="100%" src="./Assets/vectors/It-soln-carousel/carousel-3/cloud-soln.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c4 d-none">
+                        <img width="100%" src="./Assets/vectors/It-soln-carousel/carousel-4/customer-sprt.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c5 d-none">
+                        <img width="100%" src="./Assets/vectors/It-soln-carousel/carousel-5/ui-ux.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c6 d-none">
+                        <img width="100%" src="./Assets/vectors/It-soln-carousel/carousel-6/e-commerce.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <!-- For carousel all 6 images -->
+
+                    <!-- Constant for all slides -->
                     <div class="chat-section">
                         <div class="chat-box">
                             <img width="100%" src="./Assets/vectors/p1v2/Rectangle 53.png" alt="" class="chat-rect">
                         </div>
                         <img src="./Assets/vectors/p1v2/arrowDown.svg" class="down-btn" alt="">
                     </div>
+                    <!-- Constant for all slides -->
                 </div>
+
                 <div data-aos="fade-up">
-                    <div class="mobile-app-dev my-3">
+
+                    <!-- For carousel all 6 cards -->
+
+                    <div class="mobile-app-dev p1-c1 my-3">
                         <h3 class="mobile-app-head">Mobile App Development</h3>
                         <p class="mobile-app-para mb-0">
                             Leveraging cutting-edge technologies like Swift, Kotlin, React Native, Ionic, and Flutter,
@@ -346,21 +622,359 @@
                         </p>
                     </div>
 
+                    <div class="mobile-app-dev p1-c2 my-3 d-none">
+                        <h3 class="mobile-app-head">Web Development</h3>
+                        <p class="mobile-app-para mb-0">
+                            Crafting dynamic, responsive websites with cutting-edge technologies to elevate your online
+                            presence and drive engagement
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c3 my-3 d-none">
+                        <h3 class="mobile-app-head">Cloud Solutions</h3>
+                        <p class="mobile-app-para mb-0">
+                            Empowering businesses to scale with comprehensive cloud computing services, including
+                            migration, deployment, and optimization across AWS, Azure, and Google Cloud Platform.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c4 my-3 d-none">
+                        <h3 class="mobile-app-head">Custom Software</h3>
+                        <p class="mobile-app-para mb-0">
+                            Tailored solutions addressing specific business challenges, developed collaboratively with
+                            expertise in .NET, MEAN Stack, and MERN Stack technologies
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c5 my-3 d-none">
+                        <h3 class="mobile-app-head">UI/UX Design</h3>
+                        <p class="mobile-app-para mb-0">
+                            Creating intuitive, visually appealing interfaces that optimize usability and functionality,
+                            enhancing user experience and driving engagement
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c6 my-3 d-none">
+                        <h3 class="mobile-app-head">E-commerce Solutions</h3>
+                        <p class="mobile-app-para mb-0">
+                            Providing end-to-end solutions for online retail, from user-friendly shopping experiences to
+                            secure payment gateways, ensuring seamless transactions and customer satisfaction.
+                        </p>
+                    </div>
+                    <!-- For carousel all 6 cards -->
+
                     <div class="page-navigate d-flex align-items-center justify-content-between">
-                        <div class="">
-                            <span class="updates-nav-center"><img src="./Assets/vectors/page-arrow-left.svg" /></span>
-                            <span><img src="./Assets/vectors/page-arrow-right.svg" /></span>
-                            <span class="mx-4">1/5</span>
+                        <!-- For carousel all 6 nav button group -->
+                        <div class="p1-c1">
+                            <span class="updates-nav-center"><img style="cursor:text; opacity: 0.7;"
+                                    src="./Assets/vectors/It-soln-carousel/carousel-1/left-arrow-1.svg" /></span>
+                            <span><img src="./Assets/vectors/It-soln-carousel/carousel-1/right-arrow-1.svg"
+                                    onclick="navp1Next(2)" /></span>
+                            <span class="page-text mx-4">1/6</span>
                         </div>
+                        <div class="p1-c2 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/It-soln-carousel/carousel-2/left-arrow.svg"
+                                    onclick="navp1Prev(1)" /></span>
+                            <span><img src="./Assets/vectors/It-soln-carousel/carousel-2/right-arrow.svg"
+                                    onclick="navp1Next(3)" /></span>
+                            <span class="mx-4">2/6</span>
+                        </div>
+                        <div class="p1-c3 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/It-soln-carousel/carousel-3/left-arrow.svg"
+                                    onclick="navp1Prev(2)" /></span>
+                            <span><img src="./Assets/vectors/It-soln-carousel/carousel-3/right-arrow.svg"
+                                    onclick="navp1Next(4)" /></span>
+                            <span class="page-text mx-4">3/6</span>
+                        </div>
+                        <div class="p1-c4 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/It-soln-carousel/carousel-4/left-arrow.svg"
+                                    onclick="navp1Prev(3)" /></span>
+                            <span><img src="./Assets/vectors/It-soln-carousel/carousel-4/right-arrow.svg"
+                                    onclick="navp1Next(5)" /></span>
+                            <span class="mx-4">4/6</span>
+                        </div>
+                        <div class="p1-c5 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/It-soln-carousel/carousel-5/left-arrow.svg"
+                                    onclick="navp1Prev(4)" /></span>
+                            <span><img src="./Assets/vectors/It-soln-carousel/carousel-5/right-arrow.svg"
+                                    onclick="navp1Next(6)" /></span>
+                            <span class="page-text mx-4">5/6</span>
+                        </div>
+                        <div class="p1-c6 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/It-soln-carousel/carousel-6/left-arrow.svg"
+                                    onclick="navp1Prev(5)" /></span>
+                            <span><img src="./Assets/vectors/It-soln-carousel/carousel-6/right-arrow.svg"
+                                    style="cursor: text; opacity: 0.7;" /></span>
+                            <span class="page-text mx-4">6/6</span>
+                        </div>
+                        <!-- For carousel all 6 nav button group -->
+
+                        <!-- Constant for all slides -->
                         <div class="visit-btn">
                             <button onclick="navToServicesPage()" class="btn btn-dark">Visit Services</button>
                         </div>
+                        <!-- Constant for all slides -->
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+    <!-- 2. define excellence Section Ends. -->
+
+    <!-- 3. define excellence Section Starts. -->
+    <div class="container define-section mt-4 d-none" id="define-admin">
+        <div class="row">
+            <div class="col-lg-6 pl-5" data-aos="fade-right">
+                <div class="defining-head">
+                    <h3>Defining Excellence Through</h3>
+                    <p>Crafting solutions that redefine success and elevate your <br>
+                        business journey</p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-down">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="service-icons-section col-md-8 col-sm-8">
+                        <div class="section">
+                            <div class="icon-rect1 grey-bg pointer" id="virtual-icon"
+                                onclick="showDefineSection('admin', 'va')"></div>
+                            <p class="icon-text">Virtual<br>Assistance</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-rect2 grey-bg pointer" id="it-icon1"
+                                onclick="showDefineSection('admin', 'it')">
+                            </div>
+                            <p class="icon-text">IT<br>Solutions</p>
+                        </div>
+                        <div class="section">
+                            <div class="icon-rect3 orange-bg" id="admin-icon3">
+                            </div>
+                            <p class="icon-text">Admin<br>Services</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-4">
+            <div class="col-lg-6">
+                <div class="it-soln-section col-lg-11" data-aos="fade-up">
+                    <h3 class="it-soln-head">Admin Services</h3>
+                    <p class="it-soln-para">Optimize your operations with our Administrative Support services. From
+                        managing daily tasks to bookkeeping and finance support, we streamline your administrative
+                        processes for success.</p>
+                </div>
+                <div class="vr-base col-lg-11" data-aos="fade-up">
+                    <div class="vr-box">
+                        <div class="vr-img-container">
+                            <p class="yoeText">years of experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="tab-chat-section width my-1 d-flex align-items-center justify-content-between"
+                    data-aos="fade-left">
+
+                    <!-- For carousel all 8 images -->
+                    <!-- First one is default displayed -->
+                    <div class="tab-img-container p1-c1">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-1/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c2 d-none">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-2/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c3 d-none">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-3/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c4 d-none">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-4/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c5 d-none">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-5/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c6 d-none">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-6/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c7 d-none">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-7/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <div class="tab-img-container p1-c8 d-none">
+                        <img width="100%" src="./Assets/vectors/admin-serv-carousel/carousel-8/card-img.svg" alt=""
+                            class="tab-img">
+                    </div>
+                    <!-- For carousel all 8 images -->
+
+                    <!-- Constant for all slides -->
+                    <div class="chat-section">
+                        <div class="chat-box">
+                            <img width="100%" src="./Assets/vectors/p1v2/Rectangle 53.png" alt="" class="chat-rect">
+                        </div>
+                        <img src="./Assets/vectors/p1v2/arrowDown.svg" class="down-btn" alt="">
+                    </div>
+                    <!-- Constant for all slides -->
+                </div>
+
+                <div data-aos="fade-up">
+                    <!-- For carousel all 8 cards -->
+                    <div class="mobile-app-dev p1-c1 my-3">
+                        <h3 class="mobile-app-head">Database Management</h3>
+                        <p class="mobile-app-para mb-0">
+                            Our service efficiently handles database creation, maintenance, and optimization, ensuring
+                            data integrity and accessibility for informed decision-making.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c2 my-3 d-none">
+                        <h3 class="mobile-app-head">Social Media Management</h3>
+                        <p class="mobile-app-para mb-0">
+                            Elevate your online presence with strategic content creation, scheduling, and audience
+                            engagement, fostering community interactions and brand awareness.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c3 my-3 d-none">
+                        <h3 class="mobile-app-head">Property Listings</h3>
+                        <p class="mobile-app-para mb-0">
+                            Maximize property visibility through compelling listings and targeted marketing strategies,
+                            attracting the right audience and generating leads effectively.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c4 my-3 d-none">
+                        <h3 class="mobile-app-head">Lead Generation</h3>
+                        <p class="mobile-app-para mb-0">
+                            Drive business growth with targeted marketing strategies, nurturing qualified leads through
+                            strategic engagement and follow-up for increased sales opportunities.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c5 my-3 d-none">
+                        <h3 class="mobile-app-head">Client Communication</h3>
+                        <p class="mobile-app-para mb-0">
+                            Enhance client relationships with personalized communication across email, phone calls, and
+                            inquiries, fostering trust and loyalty through timely responses and support.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c6 my-3 d-none">
+                        <h3 class="mobile-app-head">Email Management</h3>
+                        <p class="mobile-app-para mb-0">
+                            Take control of your inbox with efficient organization, prioritization, and response
+                            management, staying focused and responsive while minimizing email overload.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c7 my-3 d-none">
+                        <h3 class="mobile-app-head">Marketing Materials</h3>
+                        <p class="mobile-app-para mb-0">
+                            Boost marketing efforts with creative solutions aligned with branding and objectives,
+                            delivering compelling materials to attract and engage the target audience effectively.
+                        </p>
+                    </div>
+
+                    <div class="mobile-app-dev p1-c8 my-3 d-none">
+                        <h3 class="mobile-app-head">Payment Processing</h3>
+                        <p class="mobile-app-para mb-0">
+                            Streamline payment processes with secure and efficient collection, invoicing, and
+                            transaction management, improving cash flow management and customer satisfaction.
+                        </p>
+                    </div>
+                    <!-- For carousel all 8 cards -->
+
+                    <div class="page-navigate d-flex align-items-center justify-content-between">
+                        <!-- For carousel all 6 nav button group -->
+                        <div class="p1-c1">
+                            <span class="updates-nav-center"><img style="cursor:text; opacity: 0.7;"
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-1/left-arrow.svg" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-1/right-arrow.svg"
+                                    onclick="navp1Next(2)" /></span>
+                            <span class="page-text mx-4">1/8</span>
+                        </div>
+                        <div class="p1-c2 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-2/left-arrow.svg"
+                                    onclick="navp1Prev(1)" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-2/right-arrow.svg"
+                                    onclick="navp1Next(3)" /></span>
+                            <span class="mx-4">2/8</span>
+                        </div>
+                        <div class="p1-c3 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-3/left-arrow.svg"
+                                    onclick="navp1Prev(2)" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-3/right-arrow.svg"
+                                    onclick="navp1Next(4)" /></span>
+                            <span class="page-text mx-4">3/8</span>
+                        </div>
+                        <div class="p1-c4 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-4/left-arrow.svg"
+                                    onclick="navp1Prev(3)" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-4/right-arrow.svg"
+                                    onclick="navp1Next(5)" /></span>
+                            <span class="mx-4">4/8</span>
+                        </div>
+                        <div class="p1-c5 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-5/left-arrow.svg"
+                                    onclick="navp1Prev(4)" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-5/right-arrow.svg"
+                                    onclick="navp1Next(6)" /></span>
+                            <span class="page-text mx-4">5/8</span>
+                        </div>
+                        <div class="p1-c6 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-6/left-arrow.svg"
+                                    onclick="navp1Prev(5)" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-6/right-arrow.svg"
+                                    onclick="navp1Next(7)" /></span>
+                            <span class="page-text mx-4">6/8</span>
+                        </div>
+                        <div class="p1-c7 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-7/left-arrow.svg"
+                                    onclick="navp1Prev(6)" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-7/right-arrow.svg"
+                                    onclick="navp1Next(8)" /></span>
+                            <span class="page-text mx-4">7/8</span>
+                        </div>
+                        <div class="p1-c8 d-none">
+                            <span class="updates-nav-center"><img
+                                    src="./Assets/vectors/admin-serv-carousel/carousel-8/left-arrow.svg"
+                                    onclick="navp1Prev(7)" /></span>
+                            <span><img src="./Assets/vectors/admin-serv-carousel/carousel-8/right-arrow.svg"
+                                    style="cursor: text; opacity: 0.7;" /></span>
+                            <span class="page-text mx-4">8/8</span>
+                        </div>
+                        <!-- For carousel all 8 nav button group -->
+
+                        <!-- Constant for all slides -->
+                        <div class="visit-btn">
+                            <button onclick="navToServicesPage()" class="btn btn-dark">Visit Services</button>
+                        </div>
+                        <!-- Constant for all slides -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3. define excellence Section Ends. -->
+
+    <!-- define excellence Section Ends. -->
 
     <!-- Choose Pinnacle Section-->
     <div class="container choose-excellence">
@@ -623,6 +1237,7 @@
     </div>
 
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/home.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

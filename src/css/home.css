@@ -21,6 +21,10 @@
   justify-content: space-between;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .portfolio-img img,
 .hero-img img,
 .hot-update img,
@@ -124,6 +128,9 @@ span:nth-child(2) {
   margin-left: 15px;
   margin-right: 10px;
 }
+.page-navigate span img {
+  cursor: pointer;
+}
 
 .portfolio-hot-container {
   margin-top: 20px;
@@ -214,6 +221,13 @@ span:nth-child(2) {
   height: 80px;
 }
 
+#virtual-icon1::before {
+  content: url("/Assets/vectors/p1v2/Subtract1.svg");
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #virtual-icon::before {
   content: url("/Assets/vectors/p1v2/Subtract.svg");
   position: absolute;
@@ -221,12 +235,17 @@ span:nth-child(2) {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.orange-bg {
+  background-color: var(--orange-color);
+}
+.grey-bg {
+  background-color: var(--white90);
+}
 .icon-rect1,
-.icon-rect3 {
+.icon-rect3,
+.icon-recrt2 {
   border-radius: 14px;
   position: relative;
-  background-color: var(--white90);
   width: 80px;
   height: 80px;
 }
@@ -238,7 +257,20 @@ span:nth-child(2) {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+#admin-icon3::before {
+  content: url("/Assets/vectors/p1v2/libraryActive.svg");
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#it-icon1::before {
+  content: url("/Assets/vectors/p1v2/Group1.svg");
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 #it-icon::before {
   content: url("/Assets/vectors/p1v2/Group.svg");
   position: absolute;
@@ -783,6 +815,10 @@ span:nth-child(2) {
   .gcard1 img {
     max-width: 100%;
     margin: 5px;
+  }
+  .page-text {
+    margin: 0px !important;
+    margin-left: 10px !important;
   }
 }
 
