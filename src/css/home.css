@@ -24,7 +24,9 @@
 .pointer {
   cursor: pointer;
 }
-
+.dark {
+  color: var(--dark-color);
+}
 .portfolio-img img,
 .hero-img img,
 .hot-update img,

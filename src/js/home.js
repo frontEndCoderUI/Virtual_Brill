@@ -11,6 +11,11 @@ const sixtCarouselElement = document.querySelectorAll(".p1-c6");
 const seventhCarouselElement = document.querySelectorAll(".p1-c7");
 const eighthCarouselElement = document.querySelectorAll(".p1-c8");
 
+const firstCardElement = document.querySelectorAll(".p1-v4-c1");
+const secondCardElement = document.querySelectorAll(".p1-v4-c2");
+const thirdCardElement = document.querySelectorAll(".p1-v4-c3");
+const fourthCardElement = document.querySelectorAll(".p1-v4-c4");
+
 // Define section navigation
 function showDefineSection(current, navTo) {
   resetCarouselNav();
@@ -74,7 +79,7 @@ function resetCarouselNav() {
   });
 }
 
-// Carousel navigations
+// Define section child Carousel navigations
 function navp1Prev(count) {
   if (count === 1) {
     firstCarouselElement.forEach(function (element) {
@@ -183,6 +188,61 @@ function navp1Next(count) {
     });
 
     eighthCarouselElement.forEach(function (element) {
+      element.classList.remove("d-none");
+    });
+  }
+}
+// Define section child Carousel navigations
+
+// Card section Carousel navigations
+function navp1v4Prev(count) {
+  if (count === 1) {
+    firstCardElement.forEach(function (element) {
+      element.classList.remove("d-none");
+    });
+    secondCardElement.forEach(function (element) {
+      element.classList.add("d-none");
+    });
+  } else if (count === 2) {
+    secondCardElement.forEach(function (element) {
+      element.classList.remove("d-none");
+    });
+    thirdCardElement.forEach(function (element) {
+      element.classList.add("d-none");
+    });
+  } else if (count === 3) {
+    thirdCardElement.forEach(function (element) {
+      element.classList.remove("d-none");
+    });
+    fourthCardElement.forEach(function (element) {
+      element.classList.add("d-none");
+    });
+  }
+}
+
+function navp1v4Next(count) {
+  if (count === 2) {
+    firstCardElement.forEach(function (element) {
+      element.classList.add("d-none");
+    });
+
+    secondCardElement.forEach(function (element) {
+      element.classList.remove("d-none");
+    });
+  } else if (count === 3) {
+    secondCardElement.forEach(function (element) {
+      element.classList.add("d-none");
+    });
+
+    thirdCardElement.forEach(function (element) {
+      element.classList.remove("d-none");
+    });
+  } else if (count === 4) {
+    thirdCardElement.forEach(function (element) {
+      element.classList.add("d-none");
+    });
+
+    fourthCardElement.forEach(function (element) {
       element.classList.remove("d-none");
     });
   }
